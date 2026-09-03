@@ -2,13 +2,13 @@
 
 [![Python](https://img.shields.io/badge/Python-3.x-blue)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222)](https://sucamchi-lab.github.io/portfolio-static-site/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222)](https://sucamchi.github.io/portfolio-static-site/)
 
 A custom-built static site generator created as part of the [Boot.dev](https://www.boot.dev) course on **Building a Static Site Generator in Python**.
 
 ## 🌐 Live Site
 
-**Visit the site:** [https://sucamchi-lab.github.io/portfolio-static-site/](https://sucamchi-lab.github.io/portfolio-static-site/)
+**Visit the site:** [https://sucamchi.github.io/portfolio-static-site/](https://sucamchi.github.io/portfolio-static-site/)
 
 ## ✨ Features
 
@@ -33,7 +33,7 @@ A custom-built static site generator created as part of the [Boot.dev](https://w
 ### Installation
 
 ```bash
-git clone https://github.com/sucamchi-lab/portfolio-static-site.git
+git clone https://github.com/sucamchi/portfolio-static-site.git
 cd portfolio-static-site
 ```
 
@@ -126,4 +126,4 @@ Feel free to fork this project and make it your own! This is a great foundation 
 
 ---
 
-**Built with ❤️ by [Susana](https://github.com/sucamchi-lab)**
+**Built with ❤️ by [Susana](https://github.com/sucamchi)**
