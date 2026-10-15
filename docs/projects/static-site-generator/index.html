@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Susana Camlett Chica: Python and backend developer, student at 42 Málaga." />
+    <title>Static site generator</title>
+    <link href="/portfolio-static-site/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <a class="brand" href="/portfolio-static-site/">Susana Camlett Chica</a>
+        <nav>
+            <a href="https://github.com/sucamchi">GitHub</a>
+            <a href="https://www.linkedin.com/in/scamlett">LinkedIn</a>
+            <a href="mailto:sucamchi@gmail.com">Email</a>
+        </nav>
+    </header>
+    <main>
+        <article><div><h1>Static site generator</h1><p>The generator that builds this website: Markdown in, HTML out, in plain Python with no dependencies. <a href="https://github.com/sucamchi/portfolio-static-site">Source on GitHub</a></p><p><code>Python</code> <code>parsing</code> <code>unittest</code> <code>GitHub Pages</code></p><h2>How it works</h2><p>Every page on this site is a Markdown file in a content folder. The generator walks that folder and, for each file:</p><ol><li><b>Splits it into blocks</b> (headings, paragraphs, lists, quotes, code) and works out the type of each one.</li><li><b>Parses the inline formatting</b> inside each block (bold, italic, code, links and images) into a list of text nodes.</li><li><b>Builds a tree of HTML nodes</b> from those, and renders the tree to an HTML string.</li><li><b>Fills a template</b> with the page title (taken from the first heading) and the rendered content, then writes the page to the same path in the output folder.</li></ol><p>Static files like the stylesheet are copied across, and every root-relative link is rewritten with a configurable base path, so the same content works both locally and on GitHub Pages under a project subfolder.</p><pre><code>python3 src/main.py                          # local build, base path /
+python3 src/main.py "/portfolio-static-site/"  # GitHub Pages build</code></pre><h2>Testing</h2><p>The parser and the HTML node classes are covered by unit tests with Python's built-in unittest module, run with a single script.</p><h2>Background</h2><p>I built it following the <a href="https://www.boot.dev/courses/build-static-site-generator-python">Build a Static Site Generator in Python</a> course on Boot.dev, then turned it into this portfolio.</p></div></article>
+    </main>
+    <footer>
+        Built with my own <a href="/portfolio-static-site/projects/static-site-generator">static site generator</a> in Python.
+    </footer>
+</body>
+
+</html>

@@ -1,130 +1,145 @@
+:root {
+    --bg: #fbfaf8;
+    --text: #22212a;
+    --muted: #6b6878;
+    --accent: #5b3fd1;
+    --line: #e4e1ea;
+    --code-bg: #f1eff5;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #16151c;
+        --text: #e9e7ef;
+        --muted: #a29fb0;
+        --accent: #a78bfa;
+        --line: #2c2a36;
+        --code-bg: #211f2a;
+    }
+}
+
 body {
-    background-color: #1f1c25;
-    color: #f0e6d1;
-    font-family: "Luminari", "Georgia", serif;
-    line-height: 1.7;
-    margin: 0;
-    padding: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 16px;
 }
 
-b {
-    font-weight: 900;
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px 24px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--line);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: #dda15e;
-    margin-top: 24px;
-    margin-bottom: 16px;
-    text-shadow: 2px 2px 4px #000;
+header .brand {
+    font-weight: 700;
+    color: var(--text);
 }
 
-h1 {
-    font-size: 2.5em;
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
 }
 
-h2 {
-    font-size: 2em;
+nav a {
+    color: var(--muted);
 }
 
-h3 {
-    font-size: 1.5em;
-}
-
-h4,
-h5,
-h6 {
-    font-size: 1.2em;
+footer {
+    margin: 64px 0 32px;
+    padding-top: 16px;
+    border-top: 1px solid var(--line);
+    color: var(--muted);
+    font-size: 0.9em;
 }
 
 a {
-    color: #e0a96d;
+    color: var(--accent);
     text-decoration: none;
-    border-bottom: 2px solid #e0a96d;
 }
 
 a:hover {
-    color: #f4a261;
-    border-color: #f4a261;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.2;
+    margin: 40px 0 8px;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin: 48px 0 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--line);
+}
+
+h3 {
+    font-size: 1.15em;
+    margin: 28px 0 4px;
+}
+
+/* the short tagline right under the page title */
+h1 + p {
+    font-size: 1.15em;
+    color: var(--muted);
+    margin-top: 0;
 }
 
 ul,
 ol {
-    padding-left: 30px;
+    padding-left: 24px;
+}
+
+li {
+    margin: 4px 0;
+}
+
+b {
+    font-weight: 650;
 }
 
 code {
-    background-color: #3c3c42;
-    border-radius: 6px;
-    color: #e9c46a;
-    padding: 0.4em 0.6em;
-    font-family: "Courier New", monospace;
+    background: var(--code-bg);
+    border-radius: 4px;
+    padding: 0.1em 0.35em;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background: var(--code-bg);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    overflow-x: auto;
+    line-height: 1.45;
 }
 
 pre code {
     padding: 0;
-}
-
-pre {
-    background-color: #3c3c42;
-    border-radius: 6px;
-    padding: 1em;
-    overflow: auto;
-    box-shadow: 2px 2px 6px #000;
+    background: none;
 }
 
 blockquote {
-    background-color: #2e2c35;
-    border-left: 4px solid #8d99ae;
-    padding-left: 2em;
-    margin-left: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 0.5em;
-    color: #ddd;
-    font-style: italic;
+    margin: 16px 0;
+    padding: 4px 16px;
+    border-left: 3px solid var(--accent);
+    color: var(--muted);
 }
 
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 6px;
-    border: 3px solid #3c3c42;
-    box-shadow: 3px 3px 6px #000;
-}
-
-::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1f1c25;
-    border-radius: 6px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #3c3c42;
-    border-radius: 6px;
-    border: 3px solid #1f1c25;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: #5a5466;
-}
-
-* {
-    scrollbar-width: thin;
-    scrollbar-color: #3c3c42 #1f1c25;
-}
-
-::-webkit-scrollbar-corner {
-    background: #1f1c25;
+    border-radius: 8px;
 }

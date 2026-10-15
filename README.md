@@ -4,7 +4,8 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 [![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-222)](https://sucamchi.github.io/portfolio-static-site/)
 
-A custom-built static site generator created as part of the [Boot.dev](https://www.boot.dev) course on **Building a Static Site Generator in Python**.
+My personal portfolio, built with a custom static site generator
+written in plain Python. The generator was created as part of the [Boot.dev](https://www.boot.dev) course on **Building a Static Site Generator in Python**.
 
 ## 🌐 Live Site
 
@@ -64,11 +65,9 @@ portfolio-static-site/
 │   └── test_*.py            # Unit tests
 ├── content/                 # Markdown content
 │   ├── index.md            # Home page
-│   ├── blog/               # Blog posts
-│   └── contact/            # Contact page
+│   └── projects/           # One page per featured project
 ├── static/                 # Static assets
 │   ├── index.css           # Styling
-│   └── images/             # Image files
 ├── docs/                   # Generated site (GitHub Pages)
 ├── template.html           # HTML template
 ├── main.sh                 # Local development script
@@ -105,16 +104,6 @@ Edit `template.html` to change the site layout. Use placeholders:
 ## 🎓 Learning Source
 
 This project was built following the **[Building a Static Site Generator in Python](https://www.boot.dev/courses/build-static-site-generator-python)** course on [Boot.dev](https://www.boot.dev).
-
-## 📝 Future Plans
-
-This site is **under active development** and will be personalized in the future to include:
-- Personal blog content about topics of interest
-- Work portfolio and project showcase
-- Updated styling and design
-- Additional features and functionality
-
-The foundation and structure are in place—content will evolve to reflect personal interests and professional goals.
 
 ## 📜 License
 
