@@ -1,4 +1,4 @@
-# Susana Camlett Chica · portfolio
+# Susana Camlett Chica · Professional portfolio
 
 [![Live site](https://img.shields.io/badge/live-sucamchi.github.io-a78bfa?style=flat-square)](https://sucamchi.github.io/portfolio/)
 [![Tests](https://img.shields.io/badge/tests-node%20--test-7ee2a8?style=flat-square)](tests/sim.test.mjs)
