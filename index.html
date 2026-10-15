@@ -5,16 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Susana Camlett Chica · Python, C &amp; Go</title>
-    <meta name="description" content="Susana Camlett Chica, software developer at 42 Málaga. Route planners, thread schedulers and LLM decoders in Python, C and Go, with live demos.">
+    <meta name="description"
+        content="Susana Camlett Chica, software developer at 42 Málaga. Route planners, thread schedulers and LLM decoders in Python, C and Go, with live demos.">
     <meta property="og:title" content="Susana Camlett Chica · Python, C &amp; Go">
-    <meta property="og:description" content="Software that has to be right, not just run. Live demos of my projects, running in your browser.">
+    <meta property="og:description"
+        content="Software that has to be right, not just run. Live demos of my projects, running in your browser.">
     <meta property="og:image" content="https://sucamchi.github.io/portfolio/assets/preview.png">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#0e0d13">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0d13'/%3E%3Cpath d='M8 10l6 6-6 6' stroke='%23a78bfa' stroke-width='3' fill='none'/%3E%3Cpath d='M16 22h8' stroke='%237ee2a8' stroke-width='3'/%3E%3C/svg%3E">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0d13'/%3E%3Cpath d='M8 10l6 6-6 6' stroke='%23a78bfa' stroke-width='3' fill='none'/%3E%3Cpath d='M16 22h8' stroke='%237ee2a8' stroke-width='3'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -24,9 +29,12 @@
     <main>
         <!-- 0: hero -->
         <section id="top" class="hero">
-            <p class="cmd"><span class="ps1">scamlett@42malaga:~$</span> <span id="hero-command">whoami</span><span class="caret" aria-hidden="true"></span></p>
+            <p class="cmd"><span class="ps1">scamlett@42malaga:~$</span> <span id="hero-command">whoami</span><span
+                    class="caret" aria-hidden="true"></span></p>
             <h1>Susana Camlett Chica</h1>
-            <p class="lede">I write software that has to be <em>right</em>, not just run: drone routers that provably never deadlock, thread schedulers, and an LLM decoder that cannot emit invalid JSON. Python, C and Go, at 42 Málaga.</p>
+            <p class="lede">I write software that has to be <em>right</em>, not just run: drone routers that provably
+                never deadlock, thread schedulers, and an LLM decoder that cannot emit invalid JSON. Python, C and Go,
+                at 42 Málaga.</p>
             <p class="hero-links">
                 <a class="button primary" href="mailto:sucamchi@gmail.com">sucamchi@gmail.com</a>
                 <a class="button" href="https://github.com/sucamchi">github</a>
@@ -35,15 +43,18 @@
 
             <figure class="pane">
                 <figcaption class="pane-bar">
-                    <span class="pane-title">a-maze-ing <span class="dim">·</span> <span id="maze-status" aria-live="off">carving</span></span>
+                    <span class="pane-title">a-maze-ing <span class="dim">·</span> <span id="maze-status"
+                            aria-live="off">carving</span></span>
                     <span class="pane-controls">
                         <button id="maze-new" type="button">new maze</button>
                         <button id="maze-pause" type="button" aria-pressed="false">pause</button>
                     </span>
                 </figcaption>
-                <canvas id="maze" class="maze" role="img" aria-label="Animation: a random maze is carved by depth-first search, then the shortest path through it is found with breadth-first search."></canvas>
+                <canvas id="maze" class="maze" role="img"
+                    aria-label="Animation: a random maze is carved by depth-first search, then the shortest path through it is found with breadth-first search."></canvas>
             </figure>
-            <p class="fig-note">fig. 0 · a maze carved by depth-first search and solved by breadth-first search, live in your browser. Same algorithms as <a href="#a-maze-ing">A-Maze-ing</a>.</p>
+            <p class="fig-note">fig. 0 · a maze carved by depth-first search and solved by breadth-first search, live in
+                your browser. Same algorithms as <a href="#a-maze-ing">A-Maze-ing</a>.</p>
         </section>
 
         <!-- 1: about -->
@@ -52,9 +63,16 @@
             <h2>About</h2>
             <div class="about">
                 <div class="prose">
-                    <p>I came to programming as a career change, and I'm now a student at <strong>42 Fundación Telefónica Málaga</strong>. 42 has no teachers and no lectures: you get a spec, you build it, and other students review your code line by line and try to break it before it counts.</p>
-                    <p>That suits me. The problems I enjoy most are the ones where "it runs" isn't good enough: a scheduler that must never deadlock, a decoder that must never emit broken output, a router that has to prove it always makes progress. I like finding the version of the solution that is simple enough to <em>argue</em> is correct.</p>
-                    <p>I write my Python type-checked and linted, my C leak-checked, and my READMEs to explain why the code works, not only how to run it. I work in Spanish and English, and I'm open to opportunities in Python and backend development.</p>
+                    <p>I came to programming as a career change, and I'm now a student at <strong>42 Fundación
+                            Telefónica Málaga</strong>. 42 has no teachers and no lectures: you get a spec, you build
+                        it, and other students review your code line by line and try to break it before it counts.</p>
+                    <p>That suits me. The problems I enjoy most are the ones where "it runs" isn't good enough: a
+                        scheduler that must never deadlock, a decoder that must never emit broken output, a router that
+                        has to prove it always makes progress. I like finding the version of the solution that is simple
+                        enough to <em>argue</em> is correct.</p>
+                    <p>I write my Python type-checked and linted, my C leak-checked, and my READMEs to explain why the
+                        code works, not only how to run it. I work in Spanish and English, and I'm open to opportunities
+                        in Python and backend development.</p>
                 </div>
                 <pre class="neofetch" aria-label="Summary"><span class="accent">scamlett</span>@<span class="accent">42malaga</span>
 -----------------
@@ -75,27 +93,49 @@
             <h2>CallMeMaybe</h2>
             <p class="lede">Reliable function calling with a 0.6B-parameter LLM that runs on a laptop.</p>
             <dl class="facts">
-                <div><dt>role</dt><dd>solo, 42 curriculum</dd></div>
-                <div><dt>stack</dt><dd>Python, numpy, pydantic, Qwen3-0.6B</dd></div>
-                <div><dt>result</dt><dd><span class="green">100%</span> valid JSON, up from about 33% by prompting</dd></div>
-                <div><dt>source</dt><dd><a href="https://github.com/sucamchi/CallMeMaybe">github.com/sucamchi/CallMeMaybe</a></dd></div>
+                <div>
+                    <dt>role</dt>
+                    <dd>solo, 42 curriculum</dd>
+                </div>
+                <div>
+                    <dt>stack</dt>
+                    <dd>Python, numpy, pydantic, Qwen3-0.6B</dd>
+                </div>
+                <div>
+                    <dt>result</dt>
+                    <dd><span class="green">100%</span> valid JSON, up from about 33% by prompting</dd>
+                </div>
+                <div>
+                    <dt>source</dt>
+                    <dd><a href="https://github.com/sucamchi/CallMeMaybe">github.com/sucamchi/CallMeMaybe</a></dd>
+                </div>
             </dl>
 
             <div class="prose">
-                <p>Given "What is the sum of 40 and 2?" and a catalog of functions, the program doesn't answer "42". It answers with the call that would: <code>{"name": "fn_add_numbers", "parameters": {"a": 40, "b": 2}}</code>. Small models are bad at this. Asked politely for JSON, this one produced something parseable about a third of the time.</p>
-                <p>So I stopped asking politely. A model scores every token in its vocabulary (151,936 of them) and the best score wins. <strong>Constrained decoding</strong> adds one step in between: every token that would break the output gets a score of minus infinity, so it can never win. The model still makes the choices, but only among options that are allowed.</p>
+                <p>Given "What is the sum of 40 and 2?" and a catalog of functions, the program doesn't answer "42". It
+                    answers with the call that would:
+                    <code>{"name": "fn_add_numbers", "parameters": {"a": 40, "b": 2}}</code>. Small models are bad at
+                    this. Asked politely for JSON, this one produced something parseable about a third of the time.
+                </p>
+                <p>So I stopped asking politely. A model scores every token in its vocabulary (151,936 of them) and the
+                    best score wins. <strong>Constrained decoding</strong> adds one step in between: every token that
+                    would break the output gets a score of minus infinity, so it can never win. The model still makes
+                    the choices, but only among options that are allowed.</p>
             </div>
 
             <figure class="pane decode" id="decode">
                 <figcaption class="pane-bar">
-                    <span class="pane-title">constrained decoding <span class="dim">· replay, illustrative scores</span></span>
-                    <span class="pane-controls"><button id="decode-pause" type="button" aria-pressed="false">pause</button></span>
+                    <span class="pane-title">constrained decoding <span class="dim">· replay, illustrative
+                            scores</span></span>
+                    <span class="pane-controls"><button id="decode-pause" type="button"
+                            aria-pressed="false">pause</button></span>
                 </figcaption>
                 <div class="decode-body">
                     <div>
                         <p class="decode-label">prompt</p>
                         <p class="decode-prompt">What is the sum of 40 and 2?</p>
-                        <p class="decode-label">output <span class="dim">· <span class="forced">grey</span> is forced skeleton, <span class="picked">violet</span> is the model's choice</span></p>
+                        <p class="decode-label">output <span class="dim">· <span class="forced">grey</span> is forced
+                                skeleton, <span class="picked">violet</span> is the model's choice</span></p>
                         <pre id="decode-output" class="decode-output"></pre>
                     </div>
                     <div class="decode-side">
@@ -109,13 +149,25 @@
             <div class="prose">
                 <h3>The hard parts</h3>
                 <ul>
-                    <li><strong>Picking a function without building a mask.</strong> All the names are tokenized and walked side by side. At each step the model only chooses among the next tokens of names still in the race, so it can't invent a function. Where every survivor agrees, the model isn't called at all.</li>
-                    <li><strong>Numbers have no "end" token.</strong> Strings stop at their closing quote, but every token in the number mask continues the number. The trick: also look at what the model would pick <em>without</em> the mask. The moment that's a comma or a brace, the number is finished.</li>
-                    <li><strong>"Number-shaped" isn't enough.</strong> <code>1</code>, <code>.</code> and <code>2</code> are all number characters, but <code>1.2.</code> isn't a number. Each candidate is also checked by a small state machine for the JSON number grammar.</li>
-                    <li><strong>I'd never touched an LLM before.</strong> Tokenizers, logits, byte-level vocabularies: I learned them from articles, experiments and the SDK's source code, because its documentation was thin.</li>
+                    <li><strong>Picking a function without building a mask.</strong> All the names are tokenized and
+                        walked side by side. At each step the model only chooses among the next tokens of names still in
+                        the race, so it can't invent a function. Where every survivor agrees, the model isn't called at
+                        all.</li>
+                    <li><strong>Numbers have no "end" token.</strong> Strings stop at their closing quote, but every
+                        token in the number mask continues the number. The trick: also look at what the model would pick
+                        <em>without</em> the mask. The moment that's a comma or a brace, the number is finished.
+                    </li>
+                    <li><strong>"Number-shaped" isn't enough.</strong> <code>1</code>, <code>.</code> and <code>2</code>
+                        are all number characters, but <code>1.2.</code> isn't a number. Each candidate is also checked
+                        by a small state machine for the JSON number grammar.</li>
+                    <li><strong>I'd never touched an LLM before.</strong> Tokenizers, logits, byte-level vocabularies: I
+                        learned them from articles, experiments and the SDK's source code, because its documentation was
+                        thin.</li>
                 </ul>
                 <h3>Numbers</h3>
-                <p>11 prompts, 6 functions, a laptop GPU: every output is valid and correctly typed, the right function is picked every time, and 80 to 90% of argument values are right. 97% of the runtime is the model's 109 forward passes. The decoding logic costs almost nothing.</p>
+                <p>11 prompts, 6 functions, a laptop GPU: every output is valid and correctly typed, the right function
+                    is picked every time, and 80 to 90% of argument values are right. 97% of the runtime is the model's
+                    109 forward passes. The decoding logic costs almost nothing.</p>
             </div>
         </section>
 
@@ -125,45 +177,99 @@
             <h2>Fly-in</h2>
             <p class="lede">Route a whole fleet of drones through a network in as few turns as possible.</p>
             <dl class="facts">
-                <div><dt>role</dt><dd>solo, 42 curriculum</dd></div>
-                <div><dt>stack</dt><dd>Python, heapq, pygame, mypy</dd></div>
-                <div><dt>result</dt><dd>every test map under target; <span class="green">25 drones in 43 turns</span> (target 45)</dd></div>
-                <div><dt>source</dt><dd><a href="https://github.com/sucamchi/Fly-in">github.com/sucamchi/Fly-in</a></dd></div>
+                <div>
+                    <dt>role</dt>
+                    <dd>solo, 42 curriculum</dd>
+                </div>
+                <div>
+                    <dt>stack</dt>
+                    <dd>Python, heapq, pygame, mypy</dd>
+                </div>
+                <div>
+                    <dt>result</dt>
+                    <dd>every test map under target; <span class="green">25 drones in 43 turns</span> (target 45)</dd>
+                </div>
+                <div>
+                    <dt>source</dt>
+                    <dd><a href="https://github.com/sucamchi/Fly-in">github.com/sucamchi/Fly-in</a></dd>
+                </div>
             </dl>
 
             <div class="prose">
-                <p>Zones have capacities and costs, drones can't share a full zone, and everyone must reach the goal. The obvious plan, a route per drone, falls apart in traffic: routes planned in advance don't know about congestion that hasn't happened yet.</p>
-                <p>So I turned it around. Dijkstra runs <strong>once, backwards from the goal</strong>, giving every zone a "turns remaining" number. After that, no drone owns a route. Each turn, each drone just steps to the neighbouring zone with the lowest number that still has room, or waits.</p>
+                <p>Zones have capacities and costs, drones can't share a full zone, and everyone must reach the goal.
+                    The obvious plan, a route per drone, falls apart in traffic: routes planned in advance don't know
+                    about congestion that hasn't happened yet.</p>
+                <p>So I turned it around. Dijkstra runs <strong>once, backwards from the goal</strong>, giving every
+                    zone a "turns remaining" number. After that, no drone owns a route. Each turn, each drone just steps
+                    to the neighbouring zone with the lowest number that still has room, or waits.</p>
             </div>
 
             <figure class="pane">
                 <figcaption class="pane-bar">
-                    <span class="pane-title">fly-in <span class="dim">· 8 drones, <span class="amber">amber</span> = priority zone</span></span>
+                    <span class="pane-title">fly-in <span class="dim">· 8 drones, <span class="amber">amber</span> =
+                            priority zone</span></span>
                     <span class="pane-controls">
                         <button id="flyin-restart" type="button">restart</button>
                         <button id="flyin-pause" type="button" aria-pressed="false">pause</button>
                     </span>
                 </figcaption>
-                <canvas id="flyin" class="flyin" role="img" aria-label="Animation: eight drones move from the start zone to the goal through a network, each turn stepping to the closest free zone."></canvas>
+                <canvas id="flyin" class="flyin" role="img"
+                    aria-label="Animation: eight drones move from the start zone to the goal through a network, each turn stepping to the closest free zone."></canvas>
                 <pre id="flyin-log" class="log" aria-live="off"></pre>
             </figure>
 
             <div class="prose">
                 <h3>Why it can't deadlock</h3>
                 <ul>
-                    <li>A drone only ever moves to a zone with a <em>strictly lower</em> number. Its number falls every move, so it can't loop or bounce back and forth.</li>
-                    <li>Drones move <strong>nearest to the goal first</strong>. The nearest drone's next zone can only be blocked by drones even nearer, and those have already moved this turn. So at least one drone moves every turn and the fleet always makes progress.</li>
+                    <li>A drone only ever moves to a zone with a <em>strictly lower</em> number. Its number falls every
+                        move, so it can't loop or bounce back and forth.</li>
+                    <li>Drones move <strong>nearest to the goal first</strong>. The nearest drone's next zone can only
+                        be blocked by drones even nearer, and those have already moved this turn. So at least one drone
+                        moves every turn and the fleet always makes progress.</li>
                 </ul>
-                <p>Because of that guarantee, a turn where nothing moves can only mean a bug, so the engine raises an error instead of hanging. The demo above runs the same rules in JavaScript, with tests.</p>
+                <p>Because of that guarantee, a turn where nothing moves can only mean a bug, so the engine raises an
+                    error instead of hanging. The demo above runs the same rules in JavaScript, with tests.</p>
                 <h3>Results</h3>
                 <table class="results">
-                    <thead><tr><th>map</th><th>drones</th><th>turns</th><th>target</th></tr></thead>
+                    <thead>
+                        <tr>
+                            <th>map</th>
+                            <th>drones</th>
+                            <th>turns</th>
+                            <th>target</th>
+                        </tr>
+                    </thead>
                     <tbody>
-                        <tr><td>medium · dead end trap</td><td>5</td><td>8</td><td>12</td></tr>
-                        <tr><td>hard · maze nightmare</td><td>8</td><td>13</td><td>30</td></tr>
-                        <tr><td>hard · capacity hell</td><td>12</td><td>16</td><td>35</td></tr>
-                        <tr><td>hard · ultimate challenge</td><td>15</td><td>26</td><td>45</td></tr>
-                        <tr><td>challenger · the impossible dream</td><td>25</td><td>43</td><td>45</td></tr>
+                        <tr>
+                            <td>medium · dead end trap</td>
+                            <td>5</td>
+                            <td>8</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>hard · maze nightmare</td>
+                            <td>8</td>
+                            <td>13</td>
+                            <td>30</td>
+                        </tr>
+                        <tr>
+                            <td>hard · capacity hell</td>
+                            <td>12</td>
+                            <td>16</td>
+                            <td>35</td>
+                        </tr>
+                        <tr>
+                            <td>hard · ultimate challenge</td>
+                            <td>15</td>
+                            <td>26</td>
+                            <td>45</td>
+                        </tr>
+                        <tr>
+                            <td>challenger · the impossible dream</td>
+                            <td>25</td>
+                            <td>43</td>
+                            <td>45</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -175,14 +281,29 @@
             <h2>Codexion</h2>
             <p class="lede">The dining philosophers problem in C, with real threads and two scheduling policies.</p>
             <dl class="facts">
-                <div><dt>role</dt><dd>solo, 42 curriculum</dd></div>
-                <div><dt>stack</dt><dd>C, POSIX threads, mutexes, condition variables</dd></div>
-                <div><dt>result</dt><dd>deadlock-free by construction; FIFO and earliest-deadline-first</dd></div>
-                <div><dt>source</dt><dd><a href="https://github.com/sucamchi/Codexion">github.com/sucamchi/Codexion</a></dd></div>
+                <div>
+                    <dt>role</dt>
+                    <dd>solo, 42 curriculum</dd>
+                </div>
+                <div>
+                    <dt>stack</dt>
+                    <dd>C, POSIX threads, mutexes, condition variables</dd>
+                </div>
+                <div>
+                    <dt>result</dt>
+                    <dd>deadlock-free by construction; FIFO and earliest-deadline-first</dd>
+                </div>
+                <div>
+                    <dt>source</dt>
+                    <dd><a href="https://github.com/sucamchi/Codexion">github.com/sucamchi/Codexion</a></dd>
+                </div>
             </dl>
 
             <div class="prose">
-                <p>Coders sit around a table with one USB dongle between each pair. Compiling needs both neighbouring dongles at once, each dongle needs a cooldown after use, and a coder who goes too long without compiling <em>burns out</em> and ends the run. Every coder is a thread, and a monitor thread watches for burnout.</p>
+                <p>Coders sit around a table with one USB dongle between each pair. Compiling needs both neighbouring
+                    dongles at once, each dongle needs a cooldown after use, and a coder who goes too long without
+                    compiling <em>burns out</em> and ends the run. Every coder is a thread, and a monitor thread watches
+                    for burnout.</p>
             </div>
 
             <figure class="pane">
@@ -194,7 +315,8 @@
                     </span>
                 </figcaption>
                 <div class="codexion-body">
-                    <canvas id="codexion-canvas" class="codexion" role="img" aria-label="Animation: five coders around a table take turns holding the two dongles beside them. A ring around each coder fills up as they approach burnout."></canvas>
+                    <canvas id="codexion-canvas" class="codexion" role="img"
+                        aria-label="Animation: five coders around a table take turns holding the two dongles beside them. A ring around each coder fills up as they approach burnout."></canvas>
                     <div class="codexion-side">
                         <div class="controls">
                             <label>scheduler
@@ -223,12 +345,20 @@
             <div class="prose">
                 <h3>How it stays alive</h3>
                 <ul>
-                    <li><strong>Lock ordering.</strong> Odd-numbered coders take their left dongle first and even-numbered coders their right. That breaks the circle where everyone holds one dongle and waits forever for the other.</li>
-                    <li><strong>Fair queues.</strong> Each dongle keeps a tiny priority queue of waiting coders. FIFO serves the oldest request, and EDF serves whoever is closest to burning out.</li>
-                    <li><strong>A synchronised start.</strong> All threads wait on a condition variable until everyone is ready, so nobody gets a head start.</li>
-                    <li><strong>Clean shutdown.</strong> When someone burns out, the monitor raises a stop flag and wakes every sleeping thread so they can exit, then <code>main</code> joins and frees everything.</li>
+                    <li><strong>Lock ordering.</strong> Odd-numbered coders take their left dongle first and
+                        even-numbered coders their right. That breaks the circle where everyone holds one dongle and
+                        waits forever for the other.</li>
+                    <li><strong>Fair queues.</strong> Each dongle keeps a tiny priority queue of waiting coders. FIFO
+                        serves the oldest request, and EDF serves whoever is closest to burning out.</li>
+                    <li><strong>A synchronised start.</strong> All threads wait on a condition variable until everyone
+                        is ready, so nobody gets a head start.</li>
+                    <li><strong>Clean shutdown.</strong> When someone burns out, the monitor raises a stop flag and
+                        wakes every sleeping thread so they can exit, then <code>main</code> joins and frees everything.
+                    </li>
                 </ul>
-                <p>The part I'm proudest of is the reasoning about what <em>doesn't</em> need a lock. The stop flag only ever goes from 0 to 1, and each progress counter has exactly one writer, so reading them unlocked is safe. The README writes that argument out instead of hiding it.</p>
+                <p>The part I'm proudest of is the reasoning about what <em>doesn't</em> need a lock. The stop flag only
+                    ever goes from 0 to 1, and each progress counter has exactly one writer, so reading them unlocked is
+                    safe. The README writes that argument out instead of hiding it.</p>
             </div>
         </section>
 
@@ -236,17 +366,38 @@
         <section id="a-maze-ing" class="project">
             <p class="cmd"><span class="ps1">~$</span> cd ../a-maze-ing</p>
             <h2>A-Maze-ing</h2>
-            <p class="lede">A maze generator and solver with an interactive terminal UI, shipped as a pip package. Fig. 0 at the top of this page is a port of it.</p>
+            <p class="lede">A maze generator and solver with an interactive terminal UI, shipped as a pip package. Fig.
+                0 at the top of this page is a port of it.</p>
             <dl class="facts">
-                <div><dt>role</dt><dd>team of 2: architecture, generation, display, packaging</dd></div>
-                <div><dt>stack</dt><dd>Python, ANSI terminal UI, build, flake8, mypy</dd></div>
-                <div><dt>result</dt><dd>perfect mazes and Pac-Man boards; reusable <code>mazegen</code> package</dd></div>
-                <div><dt>source</dt><dd><a href="https://github.com/sucamchi/A-Maze-ing">github.com/sucamchi/A-Maze-ing</a></dd></div>
+                <div>
+                    <dt>role</dt>
+                    <dd>team of 2: architecture, generation, display, packaging</dd>
+                </div>
+                <div>
+                    <dt>stack</dt>
+                    <dd>Python, ANSI terminal UI, build, flake8, mypy</dd>
+                </div>
+                <div>
+                    <dt>result</dt>
+                    <dd>perfect mazes and Pac-Man boards; reusable <code>mazegen</code> package</dd>
+                </div>
+                <div>
+                    <dt>source</dt>
+                    <dd><a href="https://github.com/sucamchi/A-Maze-ing">github.com/sucamchi/A-Maze-ing</a></dd>
+                </div>
             </dl>
             <div class="prose">
-                <p>It reads a config file, carves a random maze with depth-first search (an explicit stack, so big mazes don't hit Python's recursion limit), solves it with breadth-first search, and draws it in the terminal with colours, a show/hide solution toggle and a step-by-step generation animation. Each cell is one 4-bit number, one bit per wall, which keeps the grid tiny and made the hex output format trivial.</p>
-                <p>I set up the architecture and tooling (flake8 and mypy from the first commit), wrote the generator core, the terminal display and the animation, and packaged it. My teammate wrote the solver, the output format and the Pac-Man mode. We worked on separate branches and kept main working the whole time.</p>
-                <p class="aside">Lesson learned: embedding a "42" pattern of solid cells into a random maze looked like an afternoon's work. It was not.</p>
+                <p>It reads a config file, carves a random maze with depth-first search (an explicit stack, so big mazes
+                    don't hit Python's recursion limit), solves it with breadth-first search, and draws it in the
+                    terminal with colours, a show/hide solution toggle and a step-by-step generation animation. Each
+                    cell is one 4-bit number, one bit per wall, which keeps the grid tiny and made the hex output format
+                    trivial.</p>
+                <p>I set up the architecture and tooling (flake8 and mypy from the first commit), wrote the generator
+                    core, the terminal display and the animation, and packaged it. My teammate wrote the solver, the
+                    output format and the Pac-Man mode. We worked on separate branches and kept main working the whole
+                    time.</p>
+                <p class="aside">Lesson learned: embedding a "42" pattern of solid cells into a random maze looked like
+                    an afternoon's work. It was not.</p>
             </div>
         </section>
 
@@ -256,23 +407,44 @@
             <h2>OcupaSol</h2>
             <p class="lede">Forecasting hotel occupancy on the Costa del Sol, 12 months ahead, from official data.</p>
             <dl class="facts">
-                <div><dt>role</dt><dd>team of 3: I owned the data and the model</dd></div>
-                <div><dt>stack</dt><dd>Python (standard library), JavaScript, ridge regression</dd></div>
-                <div><dt>result</dt><dd>2,035-row dataset; model backtested on 36 unseen months</dd></div>
-                <div><dt>source</dt><dd><a href="https://github.com/sucamchi/OcupaSol">github.com/sucamchi/OcupaSol</a></dd></div>
+                <div>
+                    <dt>role</dt>
+                    <dd>team of 3: I owned the data and the model</dd>
+                </div>
+                <div>
+                    <dt>stack</dt>
+                    <dd>Python (standard library), JavaScript, ridge regression</dd>
+                </div>
+                <div>
+                    <dt>result</dt>
+                    <dd>2,035-row dataset; model backtested on 36 unseen months</dd>
+                </div>
+                <div>
+                    <dt>source</dt>
+                    <dd><a href="https://github.com/sucamchi/OcupaSol">github.com/sucamchi/OcupaSol</a></dd>
+                </div>
             </dl>
 
             <figure class="pane">
                 <figcaption class="pane-bar">
-                    <span class="pane-title">costa del sol <span class="dim">· % of hotel beds occupied, monthly, INE</span></span>
+                    <span class="pane-title">costa del sol <span class="dim">· % of hotel beds occupied, monthly,
+                            INE</span></span>
                 </figcaption>
-                <svg id="ocupasol-chart" class="chart" role="img" aria-label="Line chart of monthly hotel occupancy on the Costa del Sol from 2016 to 2026: a steady seasonal wave between about 45% in winter and 84% in August, a collapse to zero in 2020, and recovery by 2022."></svg>
+                <svg id="ocupasol-chart" class="chart" role="img"
+                    aria-label="Line chart of monthly hotel occupancy on the Costa del Sol from 2016 to 2026: a steady seasonal wave between about 45% in winter and 84% in August, a collapse to zero in 2020, and recovery by 2022."></svg>
                 <p id="ocupasol-readout" class="readout" aria-live="off"></p>
             </figure>
 
             <div class="prose">
-                <p>Hotels here swing from about 45% full in winter to over 80% in August, and many still plan staff and prices by copying last year. That's the baseline to beat. I wrote a script that pulls the official monthly survey from the INE (Spain's statistics office) API and builds the dataset above: 2,035 monthly records for the coast and seven towns, back to 1999, with real gaps left as gaps.</p>
-                <p>The model starts from "same month last year" and learns how to correct it from the recent year-on-year trend, with a ridge regression solved in plain JavaScript in the browser, no ML library. COVID months are left out of training. It's backtested on the last three years against the naive baseline, and the app shows its real error and a 90% interval instead of one overconfident number.</p>
+                <p>Hotels here swing from about 45% full in winter to over 80% in August, and many still plan staff and
+                    prices by copying last year. That's the baseline to beat. I wrote a script that pulls the official
+                    monthly survey from the INE (Spain's statistics office) API and builds the dataset above: 2,035
+                    monthly records for the coast and seven towns, back to 1999, with real gaps left as gaps.</p>
+                <p>The model starts from "same month last year" and learns how to correct it from the recent
+                    year-on-year trend, with a ridge regression solved in plain JavaScript in the browser, no ML
+                    library. COVID months are left out of training. It's backtested on the last three years against the
+                    naive baseline, and the app shows its real error and a 90% interval instead of one overconfident
+                    number.</p>
             </div>
         </section>
 
@@ -281,18 +453,38 @@
             <p class="cmd"><span class="ps1">~$</span> ls -l projects/ --sort=interesting</p>
             <h2>More projects</h2>
             <ul class="ls">
-                <li><span class="perm">go</span><a href="https://github.com/sucamchi/aggreGATOR">gator</a><span>RSS aggregator CLI: PostgreSQL storage, feeds scraped in the background</span></li>
-                <li><span class="perm">go</span><a href="https://github.com/sucamchi/Chirpy">chirpy</a><span>a web server written in Go</span></li>
-                <li><span class="perm">go</span><a href="https://github.com/sucamchi/pokedexcli">pokedexcli</a><span>interactive REPL over the PokéAPI with an expiring response cache</span></li>
-                <li><span class="perm">py</span><a href="https://github.com/sucamchi/boot-ai-coding-agent">coding-agent</a><span>CLI agent using Gemini function calling, sandboxed to one directory</span></li>
-                <li><span class="perm">py</span><a href="https://github.com/sucamchi/kanji-quiz">kanji-quiz</a><span>kanji quiz that weights review towards past mistakes, by Kanken level</span></li>
-                <li><span class="perm">py</span><a href="https://github.com/sucamchi/SusiShell04ElectricBoogaloo">susishell-04</a><span>42 exam simulator that also catches banned built-ins</span></li>
-                <li><span class="perm">c</span><a href="https://github.com/sucamchi/libft">libft</a><span>my own C standard library, reused across later projects</span></li>
-                <li><span class="perm">c</span><a href="https://github.com/sucamchi/ft_printf">ft_printf</a><span>printf from scratch: variadic arguments and formatting</span></li>
-                <li><span class="perm">c</span><a href="https://github.com/sucamchi/get_next_line">get_next_line</a><span>buffered line reader built on static state</span></li>
-                <li><span class="perm">sys</span><a href="https://github.com/sucamchi/Born2beroot">born2beroot</a><span>hardened Debian server: encrypted LVM, sudo and password policy, UFW, SSH</span></li>
-                <li><span class="perm">net</span><a href="https://github.com/sucamchi/NetPractice">netpractice</a><span>TCP/IP addressing, subnetting and routing</span></li>
-                <li><span class="perm">py</span><a href="https://github.com/sucamchi/asteroids">asteroids</a><span>arcade game in pygame (plus <a href="https://github.com/sucamchi/alien-invasion">alien-invasion</a>)</span></li>
+                <li><span class="perm">go</span><a href="https://github.com/sucamchi/aggreGATOR">gator</a><span>RSS
+                        aggregator CLI: PostgreSQL storage, feeds scraped in the background</span></li>
+                <li><span class="perm">go</span><a href="https://github.com/sucamchi/Chirpy">chirpy</a><span>a web
+                        server written in Go</span></li>
+                <li><span class="perm">go</span><a
+                        href="https://github.com/sucamchi/pokedexcli">pokedexcli</a><span>interactive REPL over the
+                        PokéAPI with an expiring response cache</span></li>
+                <li><span class="perm">py</span><a
+                        href="https://github.com/sucamchi/boot-ai-coding-agent">coding-agent</a><span>CLI agent using
+                        Gemini function calling, sandboxed to one directory</span></li>
+                <li><span class="perm">py</span><a
+                        href="https://github.com/sucamchi/kanji-quiz">kanji-quiz</a><span>kanji quiz that weights review
+                        towards past mistakes, by Kanken level</span></li>
+                <li><span class="perm">py</span><a
+                        href="https://github.com/sucamchi/SusiShell04ElectricBoogaloo">susishell-04</a><span>42 exam
+                        simulator that also catches banned built-ins</span></li>
+                <li><span class="perm">c</span><a href="https://github.com/sucamchi/libft">libft</a><span>my own C
+                        standard library, reused across later projects</span></li>
+                <li><span class="perm">c</span><a href="https://github.com/sucamchi/ft_printf">ft_printf</a><span>printf
+                        from scratch: variadic arguments and formatting</span></li>
+                <li><span class="perm">c</span><a
+                        href="https://github.com/sucamchi/get_next_line">get_next_line</a><span>buffered line reader
+                        built on static state</span></li>
+                <li><span class="perm">sys</span><a
+                        href="https://github.com/sucamchi/Born2beroot">born2beroot</a><span>hardened Debian server:
+                        encrypted LVM, sudo and password policy, UFW, SSH</span></li>
+                <li><span class="perm">net</span><a
+                        href="https://github.com/sucamchi/NetPractice">netpractice</a><span>TCP/IP addressing,
+                        subnetting and routing</span></li>
+                <li><span class="perm">py</span><a
+                        href="https://github.com/sucamchi/asteroids">asteroids</a><span>arcade game in pygame (plus <a
+                            href="https://github.com/sucamchi/alien-invasion">alien-invasion</a>)</span></li>
             </ul>
         </section>
 
@@ -300,17 +492,27 @@
         <section id="contact">
             <p class="cmd"><span class="ps1">~$</span> contact --preferred</p>
             <h2>Contact</h2>
-            <p class="prose">I'm looking for a team where I can work on backend or Python code that matters. If that's you, email is fastest.</p>
+            <p class="prose">I'm looking for a team where I can work on backend or Python code that matters. If that's
+                you, email is fastest.</p>
             <dl class="facts contact">
-                <div><dt>email</dt><dd><a href="mailto:sucamchi@gmail.com">sucamchi@gmail.com</a></dd></div>
-                <div><dt>linkedin</dt><dd><a href="https://www.linkedin.com/in/scamlett">linkedin.com/in/scamlett</a></dd></div>
-                <div><dt>github</dt><dd><a href="https://github.com/sucamchi">github.com/sucamchi</a></dd></div>
+                <div>
+                    <dt>email</dt>
+                    <dd><a href="mailto:sucamchi@gmail.com">sucamchi@gmail.com</a></dd>
+                </div>
+                <div>
+                    <dt>linkedin</dt>
+                    <dd><a href="https://www.linkedin.com/in/scamlett">linkedin.com/in/scamlett</a></dd>
+                </div>
+                <div>
+                    <dt>github</dt>
+                    <dd><a href="https://github.com/sucamchi">github.com/sucamchi</a></dd>
+                </div>
             </dl>
         </section>
     </main>
 
     <footer>
-        <p>Hand-written HTML, CSS and plain JavaScript. No framework, no build step, no trackers. <a href="https://github.com/sucamchi/portfolio">Source</a>.</p>
+        <p><a href="https://github.com/sucamchi/portfolio">Source</a>.</p>
     </footer>
 
     <nav class="tmux" aria-label="Sections">
