@@ -1,18 +1,18 @@
 # Susana Camlett Chica · portfolio
 
-[![Live site](https://img.shields.io/badge/live-sucamchi.github.io-a78bfa?style=flat-square)](https://sucamchi.github.io/portfolio-static-site/)
+[![Live site](https://img.shields.io/badge/live-sucamchi.github.io-a78bfa?style=flat-square)](https://sucamchi.github.io/portfolio/)
 [![Tests](https://img.shields.io/badge/tests-node%20--test-7ee2a8?style=flat-square)](tests/sim.test.mjs)
 [![No framework](https://img.shields.io/badge/dependencies-0-8f8aa6?style=flat-square)](#how-its-built)
 [![License: MIT](https://img.shields.io/badge/license-MIT-8f8aa6?style=flat-square)](LICENSE)
 
-[![The portfolio hero: a maze solved live in the browser](assets/preview.png)](https://sucamchi.github.io/portfolio-static-site/)
+[![The portfolio hero: a maze solved live in the browser](assets/preview.png)](https://sucamchi.github.io/portfolio/)
 
 Most of my projects are command-line programs: a drone router, a thread
 scheduler, an LLM decoder. You can't click on a CLI from a portfolio, so
 instead of screenshots this site **runs the algorithms themselves in your
 browser**, as small JavaScript ports of the real code.
 
-**[sucamchi.github.io/portfolio-static-site](https://sucamchi.github.io/portfolio-static-site/)**
+**[sucamchi.github.io/portfolio](https://sucamchi.github.io/portfolio/)**
 
 ## The demos
 
@@ -51,8 +51,8 @@ step, nothing to install. GitHub Pages serves the repository as it is.
 ES modules don't load from `file://`, so serve the folder:
 
 ```bash
-git clone https://github.com/sucamchi/portfolio-static-site.git
-cd portfolio-static-site
+git clone https://github.com/sucamchi/portfolio.git
+cd portfolio
 python3 -m http.server 8000      # then open http://localhost:8000
 ```
 
