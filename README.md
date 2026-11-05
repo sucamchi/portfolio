@@ -1,8 +1,6 @@
 # Susana Camlett Chica · Professional portfolio
 
 [![Live site](https://img.shields.io/badge/live-sucamchi.github.io-a78bfa?style=flat-square)](https://sucamchi.github.io/portfolio/)
-[![Tests](https://img.shields.io/badge/tests-node%20--test-7ee2a8?style=flat-square)](tests/sim.test.mjs)
-[![No framework](https://img.shields.io/badge/dependencies-0-8f8aa6?style=flat-square)](#how-its-built)
 [![License: MIT](https://img.shields.io/badge/license-MIT-8f8aa6?style=flat-square)](LICENSE)
 
 [![The portfolio hero: a maze solved live in the browser](assets/preview.png)](https://sucamchi.github.io/portfolio/)
